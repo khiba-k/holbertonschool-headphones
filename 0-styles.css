@@ -45,6 +45,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav img {
@@ -88,7 +89,6 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 0;
-  border: 1px solid red;
 }
 
 .hero-content h1 {
@@ -169,7 +169,7 @@ main {
 
 @media (max-width: 480px) {
   /* Hero Section */
-  
+
   .nav {
     width: 247px;
   }
@@ -212,5 +212,29 @@ main {
   .hero-content button {
     margin-top: 20px;
   }
-  
+
+  .menu {
+    display: block;
+    height: 14px;
+    width: 20px;
+    flex-direction: column;
+  }
+
+  .menu-bar {
+    height: 2px;
+    width: 20px;
+    background-color: #ffffff;
+    margin-bottom: 3px;
+  }
+
+  .menu-bar-mid {
+    height: 2px;
+    width: 15px;
+    background-color: #ffffff;
+    margin-bottom: 3px;
+  }
+
+  .menu-checkbox:checked {
+    display: none;
+  }
 }
