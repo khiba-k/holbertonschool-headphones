@@ -172,7 +172,7 @@ main {
     background-image: url("./images/headphones_hero_1.jpg");
     background-repeat: no-repeat;
     background-position-x: 58%;
-    /* background-size: 154.85% 100%; */
+    background-size: 154.85% 100%;
   }
 
   .nav {
@@ -185,9 +185,21 @@ main {
 
   .nav {
     width: 247px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
   }
   .nav-links {
     display: none;
+  }
+
+  .hero {
+    background-image: url("./images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 42%;
+    background-position-y: 30%;
+    background-size: 200% 150%;
   }
 
   .hero-content {
@@ -229,6 +241,8 @@ main {
   .menu {
     display: block;
     width: 100%;
+    position: relative;
+    margin-top: 0;
   }
 
   .hamburger {
@@ -239,13 +253,10 @@ main {
   }
 
   .menu-child {
-    border: 1px solid blue;
-    display: block;
+    display: flex;
     flex-direction: row;
-  }
-
-  .menu-child div {
-    border: 1px solid green;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .menu-bar {
@@ -262,8 +273,21 @@ main {
     margin-bottom: 3px;
   }
 
+  #menu-checkbox {
+    display: none;
+  }
+
   #menu-checkbox:checked ~ .nav-links {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+  }
+
+  .nav-links a {
+    margin: 15px 0;
+    font-size: 16px;
   }
 
   .nav-bar {
