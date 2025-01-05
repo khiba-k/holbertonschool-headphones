@@ -662,7 +662,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid green;
+  padding: 0.2rem;
 }
 
 @media (max-width: 1048px) {
@@ -673,12 +673,13 @@ main {
 
 @media (max-width: 480px) {
   .footer-content {
-    width: 32px;
+    width: 161px;
   }
 
   .top-row {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 161px;
   }
 }
