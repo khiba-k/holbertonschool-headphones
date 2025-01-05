@@ -21,6 +21,11 @@
   --mobile-width: 480px;
 }
 
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 /* Content Selector */
 .content {
   max-width: var(--content-mxw);
